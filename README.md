@@ -1,1 +1,2 @@
-Django Wikipedia clone
+# Wikipedia
+CS50 Wikipedia Django clone
