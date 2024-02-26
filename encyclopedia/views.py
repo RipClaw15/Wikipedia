@@ -44,7 +44,8 @@ def search(request):
     if request.method == "GET":
         q = request.GET.get('q', '')
         lowercaseResults = [item.lower() for item in util.list_entries()]
-        subStrings = [item.capitalize() for item in lowercaseResults if q in item]
+        lowercase_dict = {item.lower(): item for item in util.list_entries()}
+        subStrings = [lowercase_dict[item] for item in lowercaseResults if q.lower() in item]
         if q.lower() in lowercaseResults:
             return render(request, "encyclopedia/wiki/entry.html", {
             "entry": markdown(util.get_entry(q))

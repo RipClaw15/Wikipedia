@@ -3,36 +3,40 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <title>{% block title %}{% endblock %}</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
-    </head>
-    <body>
-        <div class="row">
-            <div class="sidebar col-lg-2 col-md-3">
-                <h2>Wiki</h2>
-                <form action="{% url 'search' %}" method="get">
-                   
-                    <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
-                </form>
-                <div>
-                    <a href="{% url 'index' %}">Home</a>
-                </div>
-                <div>
-                    <a href="{% url 'create' %}">Create New Page</a>
-                </div>
-                <div>
-                    <a href="{% url 'random' %}">Random Page</a>
-                </div>
-                {% block nav %}
-                {% endblock %}
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/99cd413302.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="sidebar col-lg-2 col-md-3">
+            <h2>Wiki</h2>
+            <form action="{% url 'search' %}" method="get">                   
+                <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
+            </form>
+            <div>
+                <a href="{% url 'index' %}">Home</a>
             </div>
-            <div class="main col-lg-10 col-md-9">
-                {% block body %}
-                {% endblock %}
+            <div>
+                <a href="{% url 'create' %}">Create New Page</a>
             </div>
+            <div>
+                <a href="{% url 'random' %}">Random Page</a>
+            </div>
+            {% block nav %}
+            {% endblock %}
         </div>
-
-    </body>
+        
+        <div class="main col-lg-7 col-md-7">
+            {% block body %}
+            {% endblock %}
+        </div>
+        
+        <div class="col-lg-3 col-md-2" style="background-color:#f0f0f0;"><i class="fa-solid fa-hand-holding-dollar"></i>Donate to keep running this page for free</div>
+    </div>
+</div>
+</body>
 </html>
