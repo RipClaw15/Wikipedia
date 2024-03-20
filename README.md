@@ -23,7 +23,7 @@ For detailed instructions on setting up and running the project, refer to the [p
 
 ## Video Demo
 
-[Wiki | Harvard CS50's Web Programming with Python and JavaScript](https://www.youtube.com/watch?v=BadFsdk4TBY)
+[[Wiki | Harvard CS50's Web Programming with Python and JavaScript](https://www.youtube.com/watch?v=BadFsdk4TBY)](https://i.ytimg.com/an_webp/BadFsdk4TBY/mqdefault_6s.webp?du=3000&sqp=CJzW6q8G&rs=AOn4CLDkGUk_fyeQLZzvg7PkknEsLTE3yw)
 
 ## Contributing
 
