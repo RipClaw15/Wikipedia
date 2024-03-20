@@ -23,7 +23,7 @@ For detailed instructions on setting up and running the project, refer to the [p
 
 ## Video Demo
 
-A video demo showcasing the features and functionality of Wikipedia will be available soon. Stay tuned for updates!
+[Wiki | Harvard CS50's Web Programming with Python and JavaScript](https://www.youtube.com/watch?v=BadFsdk4TBY)
 
 ## Contributing
 
