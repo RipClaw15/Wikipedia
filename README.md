@@ -23,7 +23,6 @@ To get started with Wikipedia, follow these steps:
 3. Configure the database settings.
 4. Run the application locally using the provided Django development server.
 
-For detailed instructions on setting up and running the project, refer to the [project documentation](link_to_documentation).
 
 
 ## Contributing
