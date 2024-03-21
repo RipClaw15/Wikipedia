@@ -2,6 +2,10 @@
 
 Welcome to the Wikipedia project repository! This project is based on the CS50 Web course assignment and serves as a simple Wikipedia-like online encyclopedia. Built using Python, Django, HTML, and CSS, Wikipedia offers users the ability to create, edit, and view encyclopedia entries on various topics.
 
+## Video Demo
+
+[![Wiki](http://img.youtube.com/vi/BadFsdk4TBY/0.jpg)](http://www.youtube.com/watch?v=BadFsdk4TBY)
+
 ## Key Features
 
 - **Search Functionality:** Users can search for encyclopedia entries using keywords.
@@ -20,10 +24,6 @@ To get started with Wikipedia, follow these steps:
 4. Run the application locally using the provided Django development server.
 
 For detailed instructions on setting up and running the project, refer to the [project documentation](link_to_documentation).
-
-## Video Demo
-
-[![Wiki](http://img.youtube.com/vi/BadFsdk4TBY/0.jpg)](http://www.youtube.com/watch?v=BadFsdk4TBY)
 
 
 ## Contributing
